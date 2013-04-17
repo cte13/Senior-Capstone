@@ -22,15 +22,15 @@ width: 100%;
 }
 
 
-#ischool img{
-float:right;
-background-color:white;
-width:160px;
-height:auto;
-margin-top:40px;
-margin-bottom:0px;
-margin-right:5px;
-padding:5px;
+	#ischool img{
+	float:right;
+	background-color:white;
+	width:160px;
+	height:auto;
+	margin-top:40px;
+	margin-bottom:0px;
+	margin-right:5px;
+	padding:5px;
 }
 
 
@@ -47,7 +47,7 @@ a{
 }
 
 a:hover{
-   color:#FF6840;
+   	color:#FF6840;
 }
 
 #menu {
@@ -60,17 +60,17 @@ a:hover{
 }
 
 ul{
-padding-left:0px;
+	padding-left:0px;
 }
 
 ul li{
-display: inline;
-padding: 3px;
-margin: 0px 0px 0px 30px;
-border-style:dotted;
-border-width:2px;
-border-color: white;
-/*color: rgb(255, 255, 255);*/
+	display: inline;
+	padding: 3px;
+	margin: 0px 0px 0px 30px;
+	border-style:dotted;
+	border-width:2px;
+	border-color: white;
+	/*color: rgb(255, 255, 255);*/
 }
 
 #menu li {
@@ -91,7 +91,7 @@ border-color: white;
 
 select {
 	border: 1px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
+    	border-radius: 3px 3px 3px 3px;
 	background: #778899;
 	display:inline-block;
 	/*width:260px;*/
@@ -121,7 +121,7 @@ color:black;
 }
 
 .button:hover {
-    border-color: #039;
+    	border-color: #039;
 	
 }
 
@@ -191,8 +191,8 @@ color:black;
 	background: #d0dafd;
 }
 table.sortable thead {
-    background-color:#eee;
-    color:#666666;
-    font-weight: bold;
-    cursor: default;
+	    background-color:#eee;
+	    color:#666666;
+	    font-weight: bold;
+	    cursor: default;
 }
