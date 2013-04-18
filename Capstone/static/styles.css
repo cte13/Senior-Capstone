@@ -1,4 +1,4 @@
-﻿body{
+body{
 	background: #778899;
 	color:white; 
 	min-width:700px;
@@ -22,7 +22,7 @@ width: 100%;
 }
 
 
-	#ischool img{
+#ischool img{
 	float:right;
 	background-color:white;
 	width:160px;
@@ -47,7 +47,7 @@ a{
 }
 
 a:hover{
-   	color:#FF6840;
+   color:#FF6840;
 }
 
 #menu {
@@ -91,7 +91,7 @@ ul li{
 
 select {
 	border: 1px solid #CCCCCC;
-    	border-radius: 3px 3px 3px 3px;
+    border-radius: 3px 3px 3px 3px;
 	background: #778899;
 	display:inline-block;
 	/*width:260px;*/
@@ -108,7 +108,6 @@ color:black;
 .button {
 	margin: 1em;
 	margin-left: 30px;
-   	width: 110px;
 	border: 1px solid;
 	padding: .3em;
 	border: 1.5px solid white;
@@ -117,11 +116,11 @@ color:black;
 	font-size: 13px;
 	color: #039;
 	background: #b9c9fe;	
-	display:block;
+	display:inline;
 }
 
 .button:hover {
-    	border-color: #039;
+    border-color: #039;
 	
 }
 
@@ -140,18 +139,23 @@ color:black;
 	border-color:white;
 	padding:30px 40px 40px 40px;
 	margin:50px;
+	min-width:780px;
 }
 
 .data{
 	color:white;
 }
 
+.selected {
+	background-color: white !important;
+}
+
+
 #rounded-corner
 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 	font-size: 12px;
-	margin: 30px;
-	width: 480px;
+	width: 800px;
 	text-align: left;
 	border-collapse: collapse;
 }
@@ -167,7 +171,7 @@ color:black;
 {
 	padding: 8px;
 	font-weight: normal;
-	font-size: 10.5px;
+	font-size: 13px;
 	color: #039;
 	background: #b9c9fe;
 }
@@ -177,6 +181,7 @@ color:black;
 	background: #e8edff;
 	border-top: 1px solid #fff;
 	color: #669;
+	height:3em;
 }
 #rounded-corner tfoot td.rounded-foot-left
 {
@@ -191,8 +196,8 @@ color:black;
 	background: #d0dafd;
 }
 table.sortable thead {
-	    background-color:#eee;
-	    color:#666666;
-	    font-weight: bold;
-	    cursor: default;
+    background-color:#eee;
+    color:#666666;
+    font-weight: bold;
+    cursor: default;
 }
