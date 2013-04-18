@@ -33,36 +33,37 @@
 		<option value="Other Investment Fund">Other Investment Funds</option>
 	</select>
 	<div>
-		Stp 1<input type='submit' value='Look for Forms' class='button' />
+		Step 1<input type='submit' value='Look for Forms' class='button' />
 		Step 2<input type="button" id="removeRows" value="Isolate Rows" class="button" />
 		Step 3<input type="button" id="btnExport" value="Export to Excel" class="button" />	
 	</div>
 </form>
 </div>
-
-{% if formds %}
-	<table id="rounded-corner" class="sortable">
-	<thead>
-	<th scope="col" class="rounded-q1">Company</th>
-	<th scope="col">Submission Date</th>
-	<th scope="col">Offering Amount</th>
-	<th scope="col" class="rounded-q4">Remaining Amount</th>
-	</thead>
-	<tfoot>
-    	<tr>
-        	<td colspan="3" class="rounded-foot-left">&nbsp;</td>
-        	<td class="rounded-foot-right">&nbsp;</td>
-        </tr>
-	</tfoot>
-	{% for formd in formds %}
-		<tr>
-		<td>{{ formd.Issuer.Name }}</td>
-		<td>{{ formd.SubmissionDate }}</td>
-		<td>{{ formd.TotalOfferingAmount }}</td>
-		<td>{{ formd.TotalRemaining }}</td>
-		</tr>
-	{% endfor %}
-	</table>
+<div id="exportToExcel">
+	{% if formds %}
+		<table id="rounded-corner" class="sortable">
+		<thead>
+		<th scope="col" class="rounded-q1">Company</th>
+		<th scope="col">Submission Date</th>
+		<th scope="col">Offering Amount</th>
+		<th scope="col" class="rounded-q4">Remaining Amount</th>
+		</thead>
+		<tfoot>
+	    	<tr>
+	        	<td colspan="3" class="rounded-foot-left">&nbsp;</td>
+	        	<td class="rounded-foot-right">&nbsp;</td>
+	        </tr>
+		</tfoot>
+		{% for formd in formds %}
+			<tr class='selectable'>
+				<td>{{ formd.Issuer.Name }}</td>
+				<td>{{ formd.SubmissionDate }}</td>
+				<td>{{ formd.TotalOfferingAmount }}</td>
+				<td>{{ formd.TotalRemaining }}</td>
+			</tr>
+		{% endfor %}
+		</table>
+</div>
 </div>
 {% endif %}
 {% endblock %}
