@@ -192,7 +192,9 @@ color:black;
 .data{
 	color:white;
 }
-
+.selected {
+	background-color: white !important;
+}
 #rounded-corner
 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
